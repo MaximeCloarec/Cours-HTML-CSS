@@ -74,3 +74,32 @@ footer {
         margin-right: 0;
     }
 }
+
+.image {
+    width: 500px;
+    margin: 20;
+}
+
+h3 {
+    text-decoration: underline;
+    color: red;
+    margin: 20px;
+}
+
+p {
+    margin: 20px;
+}
+
+#Titre {
+    text-decoration: wavy;
+    color: blue;
+}
+
+body {
+    background: linear-gradient(
+        270deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(58, 58, 224, 1) 35%,
+        rgba(0, 212, 255, 1) 100%
+    );
+}
