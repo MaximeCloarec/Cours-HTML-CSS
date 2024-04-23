@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cours Html-Css</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Cours HTML - CSS</h1>
+            <nav>
+                <ul>
+                    <li><a href="pages/home.html">Accueil</a></li>
+                    <li>
+                        <a href="/pages/lessons/html-text.html">
+                            Leçon 1 : Html (text)</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/pages/lessons/html-liens.html"
+                            >Leçon 2 : Html (liens)</a
+                        >
+                    </li>
+                    <li><a href="#">Leçon 3</a></li>
+                    <li><a href="/pages/TP/CV.html">CV</a></li>
+                    <li><a href="Veille-Tech.html">Veille-Tech</a></li>
+                    <li><a href="connexion.html">Connexion</a> </li>
+                    <li><a href="inscription.html">Inscription</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form>
+                <fieldset>
+                    <label for="name">Ton petit nom</label>
+                    <input
+                        name="name"
+                        type="text"
+                        autocomplete="off"
+                        required
+                    />
+                    <label for="nickname">Un pseudo peut être ?</label>
+                    <input
+                        name="nickname"
+                        type="text"
+                        autocomplete="off"
+                        required
+                    />
+                    <label for="email">Ton email bien sûr!</label>
+                    <input
+                        name="email"
+                        type="email"
+                        autocomplete="off"
+                        required
+                    />
+                    <label for="password"
+                        >Il va nous falloir ton mot de Passe</label
+                    >
+                    <input name="password" type="password" required />
+                </fieldset>
+                <fieldset>
+                    <label for="card"
+                        >Ton numéro de carte bancaire pour être sûr</label
+                    >
+                    <input
+                        name="card"
+                        type="number"
+                        minlength="16"
+                        maxlength="16"
+                        value="0000000000000000"
+                        required
+                    />
+                    <label for="cardDate"
+                        >La date pour qu'on puisse te rapeller quand elle
+                        expire</label
+                    >
+                    <input
+                        name="cardDate"
+                        type="number"
+                        minlength="3"
+                        maxlength="16"
+                        required
+                    />
+                    <label for="securite"
+                        >Possède tu un système de sécurité chez toi ?</label
+                    >
+                    <label for="oui">oui</label>
+                    <input name="securite" type="radio" value="oui" />
+                    <label for="non">non</label>
+                    <input name="securite" type="radio" value="non" />
+                </fieldset>
+                <fieldset>
+                    <label for="commentaire">Quelque chose a nous dire ?</label>
+                    <textarea name="commentaire">Ton Commentaire</textarea>
+                </fieldset>
+                <a href="inscription.html"><input name="inscription" type="button" value="Inscription"></a>
+                <a href="connexion.html"><input name="connexion"type="button" value="Déja inscrit?"></a>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Mon Cours. Tous droits réservés.</p>
+        </footer>
+    </body>
+</html>
