@@ -4,13 +4,26 @@
     /* padding: 0; */
     box-sizing: border-box;
 }
+.jacquard-24-regular {
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tac-one-regular {
+    font-family: "Tac One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* Styles généraux */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Tac One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
+    color: #000000;
 }
 
 header {
@@ -105,40 +118,44 @@ body {
 
 .imageSmall {
     width: 50px;
-}  
+}
 
-.imageSmall:hover  {
+.imageSmall:hover {
     opacity: 50%;
 }
 
-label{
+label {
     display: block;
     font-weight: bold;
     color: white;
 }
-fieldset{
+fieldset {
     text-align: center;
     width: fit-content;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* .contact{
-    background-color: white;
-} */
+.contact {
+    background-image: url(img/eric-prouzet-ykJarCefKqE-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
 
-.moi{
+.moi {
     background-image: url(img/michael-hacker-b4aKXCeevtc-unsplash.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
 }
 
-.parcours{
+.parcours {
     background-image: url(img/gerald-schombs-GBDkr3k96DE-unsplash.jpg);
     background-position: center;
     background-attachment: fixed;
@@ -146,11 +163,51 @@ form{
     min-height: 500px;
 }
 
-.compétences{
+.compétences {
     color: white;
     background-image: url(img/1337068.jpeg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     min-height: 500px;
+}
+
+.article {
+    display: flex;
+    border: solid black;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px black
+}
+
+.imgArticle {
+    width: fit-content;
+    max-height: 300px;
+    border-radius: 20px;
+}
+
+.lessons {
+    background: linear-gradient(
+        90deg,
+        rgba(226, 212, 5, 1) 0%,
+        rgba(224, 144, 58, 1) 35%,
+        rgba(255, 25, 0, 1) 100%
+    );
+}
+
+.TP {
+    background: linear-gradient(
+        90deg,
+        rgba(5, 210, 226, 1) 0%,
+        rgba(58, 173, 224, 1) 35%,
+        rgba(0, 56, 255, 1) 100%
+    );
+}
+
+.containeur{
+    display: flex;
+    justify-content: center;
 }

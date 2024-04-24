@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cours Html-Css</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cours Html-Css</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
+    <body>
+        <header>
+            <h1>Cours HTML - CSS</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li>
+                        <a href="lessons/html-text.html">
+                            Leçon 1 : Html (text)</a
+                        >
+                    </li>
+                    <li>
+                        <a href="lessons/html-liens.html"
+                            >Leçon 2 : Html (liens)</a
+                        >
+                    </li>
+                    <li><a href="#">Leçon 3</a></li>
+                    <li><a href="TP/CV.html">CV</a></li>
+                    <li><a href="Veille-Tech.html">Veille-Tech</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<body>
-    <header>
-        <h1>Cours HTML - CSS</h1>
-        <nav>
-            <ul>
-                <li><a href="#" >Accueil</a></li>
-                <li><a href="lessons/html-text.html"> Leçon 1 : Html (text)</a></li>
-                <li><a href="lessons/html-liens.html">Leçon 2 : Html (liens)</a></li>
-                <li><a href="#">Leçon 3</a></li>
-                <li><a href="TP/CV.html">CV</a> </li>
-                <li><a href="Veille-Tech.html">Veille-Tech</a> </li>
-                <li><a href="connexion.html">Connexion</a> </li>
-                <li><a href="inscription.html">Inscription</a> </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- à voir -->
-        <h1>home</h1>
-    </main>
-    <footer>
-        <p>&copy; 2024 Mon Cours. Tous droits réservés.</p>
-    </footer>
-</body>
+        <main>
+            <!-- à voir -->
+            <h1>MENU</h1>
+            <div class="containeur">
+                <div class="article lessons">
+                    <img
+                        class="imgArticle"
+                        src="../img/ca4914da2a0215dc67c89d8eb7b31e30.jpg"
+                    />
+                    <p>Les milles et une couleurs de l'arc en ciel</p>
+                    <a href="/pages/lessons/css-color.html"
+                        ><button>CSS-COLOR</button></a
+                    >
+                </div>
+                <div class="article TP">
+                    <img class="imgArticle" src="../img/Dolphin.png" />
+                    <p>Mon petit CV tout joli</p>
+                    <a href="/pages/TP/CV.html"><button>CV</button></a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Mon Cours. Tous droits réservés.</p>
+        </footer>
+    </body>
 </html>
