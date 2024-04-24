@@ -38,9 +38,9 @@ nav ul li a {
     color: #fff;
 }
 
-main {
+/* main {
     padding: 20px;
-}
+} */
 
 section {
     margin-bottom: 20px;
@@ -96,12 +96,11 @@ p {
 }
 
 body {
-    background: linear-gradient(
-        270deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(58, 58, 224, 1) 35%,
-        rgba(0, 212, 255, 1) 100%
-    );
+    background-image: url(img/alexander-grey-epRlEd6oTmE-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 500px;
 }
 
 .imageSmall {
@@ -126,4 +125,32 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* .contact{
+    background-color: white;
+} */
+
+.moi{
+    background-image: url(img/michael-hacker-b4aKXCeevtc-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.parcours{
+    background-image: url(img/gerald-schombs-GBDkr3k96DE-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.compétences{
+    color: white;
+    background-image: url(img/1337068.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 500px;
 }
