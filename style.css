@@ -249,3 +249,25 @@ a:focus {
     translate: 80px;
     transition: 200ms;
 }
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+th,
+td {
+    padding: 20px;
+    border: black solid;
+}
+
+table {
+    border: black solid;
+    border-collapse: collapse;
+    margin: 50px;
+}
+
+.imgTable{
+    max-width: 25%;
+}
