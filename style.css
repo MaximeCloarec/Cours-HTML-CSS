@@ -271,3 +271,41 @@ table {
 .imgTable{
     max-width: 25%;
 }
+
+.articleForum{
+    background-color: white;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    min-width: 800px;
+    justify-content: space-between;
+}
+
+.imgForum{
+    width: 100px;
+    border-radius: 100px;
+}
+
+.containerForum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainConteneur{
+    display: flex;
+}
+
+.Gauche,.Droite{
+    margin: 20px;
+}
+
+.barre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon,.search{
+    margin: 20px;
+}
