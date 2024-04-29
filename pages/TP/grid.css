@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(5,5vw);
+    justify-content: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+h1{
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+nav{
+    grid-column: 2/2;
+    grid-row: 2/2;
+}
+
+div:first-of-type{
+    grid-column: 1/1;
+    grid-row: 3/3;
+}
+
+div:last-child{
+    grid-column: 3/3;
+    grid-row: 3/3;
+}
+
+div:nth-child(even){
+    grid-column: 2/2;
+    grid-row: 3/3;
+}
+
+div{
+    margin: 20px;
+}
