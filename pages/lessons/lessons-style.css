@@ -1,32 +1,126 @@
-h1{
+h1 {
     color: gold;
 }
 
-.container{
+.container {
     padding: 1%;
     background-color: rgb(111, 134, 157);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
-
-.degrad{
+.degrad {
     width: 500px;
     height: 250px;
     background-image: linear-gradient(blue, yellow);
 }
 
-#el1{
+#el1 {
     background-color: rgb(0, 157, 255);
-
 }
-#el2{
+#el2 {
     background-color: rgb(114, 232, 114);
-
 }
-#el3{
+#el3 {
     background-color: rgb(246, 0, 0);
-
 }
 
+.transition {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition-property: background-color, width, height;
+    transition-duration: 5s;
+    transition-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.transition:hover {
+    width: 2000px;
+    height: 2000px;
+    background-color: purple;
+    transform: rotate(0.5turn) translate(100px);
+}
+
+.animation {
+    width: 500px;
+    height: 500px;
+    background-color: palegreen;
+    border-radius: 100%;
+}
+
+.animation {
+    /* ICI on fera un truc  */
+    animation: bounce 500ms alternate infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+        background-color: blue;
+    }
+    to {
+        transform: translateY(-300px);
+    }
+}
+
+.anim{
+    display: flex;
+    flex-direction: row;
+}
+
+.un{
+    animation-delay: 100ms;
+}
+
+.deux{
+    animation-delay: 200ms;
+}
+
+.trois{
+    animation-delay: 300ms;
+}
+
+.zoom{
+    width: 500px;
+    height: 500px;
+    transition-property: width,height;
+    transition-duration: 2s;
+}
+
+.zoom:hover{
+    height: 600px;
+    width: 600px;
+}
+
+.NIMP{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    animation: NIMP 0.009ms  alternate infinite  ;
+}
+
+@keyframes NIMP {
+    0.00% {
+        background-color: red;
+        transform: rotate(360deg) translate(500px,200px) scale(150%)  ;
+    }
+    16.67% {
+        background-color: orange;
+    }
+    33.33% {
+        background-color: yellow;
+    }
+    50.00% {
+        background-color: green;
+    }
+    66.67% {
+        background-color: blue;
+    }
+    83.33% {
+        background-color: indigo;
+    }
+    100.00% {
+        background-color: violet;
+    }
+}
